@@ -3,35 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YO CUSTOM WATCHES</title>
+    <title>YO CUSTOM WATCHES | Premium Hand-Assembled</title>
     <style>
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; background-color: #f9f9f9; color: #333; }
-        header { padding: 40px; background: #fff; text-align: center; border-bottom: 1px solid #eee; }
-        .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 40px; }
-        .card { background: #fff; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); width: 300px; padding: 20px; text-align: center; }
-        .card img { width: 100%; border-radius: 10px; height: auto; margin-bottom: 15px; }
-        .btn { background: #00b900; color: white; padding: 12px; text-decoration: none; border-radius: 8px; display: block; font-weight: bold; }
+        :root { --main-color: #1a1a1a; --accent-color: #00b900; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; background-color: #fcfcfc; color: var(--main-color); }
+        
+        /* Navigation */
+        nav { padding: 25px; background: #fff; text-align: center; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.4rem; font-weight: 800; letter-spacing: 4px; text-transform: uppercase; }
+
+        /* Header / Banner */
+        .hero { padding: 60px 20px; text-align: center; background: #fff; }
+        .hero h1 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 300; }
+        .hero p { color: #888; font-size: 0.9rem; letter-spacing: 1px; }
+
+        /* Product Grid */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 20px; max-width: 1200px; margin: 0 auto; }
+        
+        .card { background: #fff; border-radius: 0px; overflow: hidden; transition: 0.4s; border: 1px solid #eee; text-align: center; padding-bottom: 25px; }
+        .card:hover { border-color: #999; }
+        .card img { width: 100%; height: 350px; object-fit: cover; transition: 0.5s; }
+        .card:hover img { transform: scale(1.03); }
+        
+        .card-info { padding: 20px; }
+        .card-info h3 { font-size: 1.1rem; margin: 10px 0; font-weight: 600; text-transform: uppercase; }
+        .card-info p { font-size: 0.85rem; color: #666; margin-bottom: 15px; line-height: 1.6; }
+        .price { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; display: block; }
+
+        /* Button */
+        .btn { background: var(--main-color); color: white; padding: 12px 30px; text-decoration: none; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; transition: 0.3s; display: inline-block; }
+        .btn:hover { background: var(--accent-color); }
+
+        footer { padding: 50px; text-align: center; color: #aaa; font-size: 0.7rem; letter-spacing: 1px; }
     </style>
 </head>
 <body>
 
-<header><h1>YO CUSTOM WATCHES</h1></header>
+<nav><div class="logo">YO CUSTOM WATCHES</div></nav>
+
+<div class="hero">
+    <h1>Hand-Assembled Precision</h1>
+    <p>CUSTOM MODS & LUXURY TIMEPIECES</p>
+</div>
 
 <div class="gallery">
     <div class="card">
-        <img src="blue.png" alt="Blue Mod">
-        <h3>Blue Edition</h3>
-        <p>งาน Custom ประกอบมือทุกชิ้น</p>
-        <a href="https://line.me/ti/p/YOUR_ID" class="btn">สั่งทำเรือนนี้</a>
+        <img src="blue.png" alt="Blue Dial Mod">
+        <div class="card-info">
+            <h3>Seiko Mod "Sky Blue"</h3>
+            <p>กลไก Automatic NH35 | กระจก Sapphire<br>ขอบ Ceramic | ตัวเรือน 904L Steel</p>
+            <span class="price">฿12,900</span>
+            <a href="https://line.me/ti/p/YOUR_ID" class="btn">Order Now</a>
+        </div>
     </div>
 
     <div class="card">
-        <img src="green.png" alt="Green Mod">
-        <h3>Green Edition</h3>
-        <p>สเปก NH35 กระจก Sapphire</p>
-        <a href="https://line.me/ti/p/YOUR_ID" class="btn">สั่งทำเรือนนี้</a>
-    </div>
-</div>
-
-</body>
-</html>
+        <img src="green.png" alt="Green Dial Mod">
+        <div class="card-info">
+            <h3>Seiko Mod "H
